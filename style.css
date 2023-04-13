@@ -53,11 +53,15 @@ header .heading h1{
         background-color: royalblue;
         padding: 0;
     }
+    header .logo{
+        padding: 1vh 0 0 0;
+    }
     header .logo img{
         width: 10%;
     }
     header .heading h1{
         font-size: 0.9em;
+        padding: 0 2vh;
     }
 }
 /* Headers CSS Ends Here */
