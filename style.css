@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald&display=swap');
+*{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+:root{
+    --color1: #;
+    --color2: #;
+    --color3: #;
+    --color4: #;
+    --font1: 'Oswald', sans-serif;
+    --font2: 'Bebas Neue', sans-serif;
+}
+/* Header CSS Starts Here */
+header{
+    width: 100%;
+    display: flex;
+}
+header .logo{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1vh 0vh;
+}
+header .logo img{
+    width: 40%;
+}
+header .heading{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: royalblue;
+    border-radius: 0 0 15px 15px;
+}
+header .heading h1{
+    font-family: var(--font1);
+    font-size: 2em;
+}
+@media only screen and (max-width:768px) {
+    header{
+        flex-direction: column;
+    }
+    header .logo, header .heading{
+        width: 100%;
+        background-color: royalblue;
+        padding: 0;
+    }
+    header .logo img{
+        width: 10%;
+    }
+    header .heading h1{
+        font-size: 0.9em;
+    }
+}
+/* Headers CSS Ends Here */
+/* Main CSS Starts Here */
+/* Roll Number Box Starts Here */
