@@ -54,10 +54,10 @@ header .heading h1{
         padding: 0;
     }
     header .logo{
-        padding: 5vh 0 0 0;
+        padding: 5vh 0vh;
     }
     header .logo img{
-        width: 15%;
+        width: 20%;
     }
     header .heading h1{
         font-size: 0.9em;
