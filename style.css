@@ -10,10 +10,10 @@ body{
     width: 100%;
 }
 :root{
-    --color1: #;
-    --color2: #;
-    --color3: #;
-    --color4: #;
+    --color1: #246f98;
+    --color2: #3197ac;
+    --color3: #cecab4;
+    --color4: #d1b446;
     --font1: 'Oswald', sans-serif;
     --font2: 'Bebas Neue', sans-serif;
 }
@@ -37,7 +37,7 @@ header .heading{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: royalblue;
+    background-color: var(--color1);
     border-radius: 0 0 15px 15px;
     text-align: center;
     text-align-last: center;
@@ -46,10 +46,59 @@ header .heading h1{
     font-family: var(--font1);
     font-size: 2em;
 }
+/* Headers CSS Ends Here */
+/* Main CSS Starts Here */
+main{
+    width: 100%;
+}
+main .entry{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10vh auto;
+    padding: 5vh;
+    text-transform: capitalize;
+    font-family: var(--font2);
+    border: 2px groove var(--color2);
+    border-radius: 8px;
+}
+main .entry input{
+    border: 1px solid var(--color1);
+    border-radius: 5px;
+    margin: 3vh 0vh;
+    transition: all 1s ease;
+    width: 30%;
+    padding: 2px;
+}
+main .entry input:focus{
+    box-shadow: 0 0 15px 1px var(--color2);
+}
+main .entry button{
+    width: 15%;
+    padding: 2px;
+    font-family: var(--font2);
+    background-color: var(--color1);
+    color: white;
+    border-radius: 10px;
+    transition: all 1s ease;
+    border: 1px solid white;
+}
+main .entry button:hover{
+    background: none;
+    border: 1px solid var(--color1);
+    color: var(--color1);
+}
+main .entry p{
+    margin-bottom: 0;
+    display: none;
+}
+/* CSS For Responsiveness */
 @media only screen and (max-width:768px) {
     header{
         flex-direction: column;
-        background-color: royalblue;
+        background-color: var(--color1);
         border-radius: 0 0 15px 15px;
     }
     header .logo, header .heading{
@@ -68,7 +117,15 @@ header .heading h1{
         text-align: center;
         text-align-last: center;
     }
+    main .entry{
+        width: 95%;
+        margin: 2vh auto;
+    }
+    main .entry input{
+        margin: 2vh 0vh;
+        width: 90%;
+    }
+    main .entry button{
+        width: 45%;
+    }
 }
-/* Headers CSS Ends Here */
-/* Main CSS Starts Here */
-/* Roll Number Box Starts Here */
