@@ -71,6 +71,7 @@ main .entry input{
     transition: all 1s ease;
     width: 30%;
     padding: 2px;
+    caret-color: var(--color1);
 }
 main .entry input:focus{
     box-shadow: 0 0 15px 1px var(--color2);
@@ -183,6 +184,6 @@ main .result table thead th,main .result table tr td{
         width: 95%;
     }
     main .data .box p{
-        font-size: 0.6em;
+        font-size: 0.8em;
     }
 }
