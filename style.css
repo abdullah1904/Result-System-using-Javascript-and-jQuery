@@ -182,4 +182,7 @@ main .result table thead th,main .result table tr td{
     main .data .box{
         width: 95%;
     }
+    main .data .box p{
+        font-size: 0.8em;
+    }
 }
