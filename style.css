@@ -190,13 +190,13 @@ main .result section table thead th,main .result section table tr td{
         font-size: 0.8em;
     }
     main .result h2{
-        font-size: 0.5em;
+        font-size: 0.4em;
     }
     main .result section{
         overflow-x: scroll;
     }
     main .result section table{
         width: 200%;
-        font-size: 0.4em;
+        font-size: 0.2em;
     }
 }
