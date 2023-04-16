@@ -49,8 +49,8 @@ $(document).ready(function(){
             }
         }
         if(checkflag == false){
-            $(databox).fadeOut();
-            $(error).fadeIn();
+            $(databox).fadeOut("slow");
+            $(error).fadeIn("slow");
         }
     });
 }); 
