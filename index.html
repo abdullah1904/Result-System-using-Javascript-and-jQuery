@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,12 @@
     <meta name="theme-color" content="#3197ac">
     <title>Online Result || UET</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script src="script.js" defer></script>
     <link rel="shortcut icon" href="Uetlogo.png" type="image/x-icon">
 </head>
+
 <body>
     <header>
         <section class="logo">
@@ -25,97 +28,101 @@
             <label for="">Enter your roll number</label>
             <input type="number" id="entry" placeholder="Enter Three Digit Roll Number">
             <button id="btn">Click to Check</button>
-            <p id="error">Sorry! the result of given roll number is not in our record. Kindly enter correct roll number.</p>
+            <p id="error">Sorry! the result of given roll number is not in our record. Kindly enter correct roll number.
+            </p>
         </section>
         <section class="data">
             <section class="box">
-                <p>Name:  <span id="name"></span></p>
+                <p>Name: <span id="name"></span></p>
             </section>
             <section class="box">
-                <p>Father Name:  <span id="fname"></span></p>
+                <p>Father Name: <span id="fname"></span></p>
             </section>
             <section class="box">
-                <p>Roll number:  <span id="rollno"></span></p>
+                <p>Roll number: <span id="rollno"></span></p>
             </section>
             <section class="box">
-                <p>Registration Number:  <span id="redgno"></span></p>
+                <p>Registration Number: <span id="redgno"></span></p>
             </section>
         </section>
         <section class="result">
             <h2>Result</h2>
-            <table>
-                <thead>
-                    <th>Semester name</th>
-                    <th>Subject name</th>
-                    <th>CH</th>
-                    <th>grade</th>
-                    <th>status</th>
-                </thead>
-                <tr>
-                    <td>fall 2022</td>
-                    <td>Programming Fundamentals</td>
-                    <td>3</td>
-                    <td></td>
-                    <td>provisional</td>
-                </tr>
-                <tr>
-                    <td>fall 2022</td>
-                    <td>Programming Fundamentals (Lab)</td>
-                    <td>1</td>
-                    <td></td>
-                    <td>provisional</td>
-                </tr>
-                <tr>
-                    <td>fall 2022</td>
-                    <td>Introduction to computing</td>
-                    <td>3</td>
-                    <td></td>
-                    <td>provisional</td>
-                </tr>
-                <tr>
-                    <td>fall 2022</td>
-                    <td>Introduction to computing (Lab)</td>
-                    <td>1</td>
-                    <td></td>
-                    <td>provisional</td>
-                </tr>
-                <tr>
-                    <td>fall 2022</td>
-                    <td>Functional english</td>
-                    <td>3</td>
-                    <td></td>
-                    <td>provisional</td>
-                </tr>
-                <tr>
-                    <td>fall 2022</td>
-                    <td>calculus</td>
-                    <td>3</td>
-                    <td></td>
-                    <td>provisional</td>
-                </tr>
-                <tr>
-                    <td>fall 2022</td>
-                    <td>applied physics</td>
-                    <td>2</td>
-                    <td></td>
-                    <td>provisional</td>
-                </tr>
-                <tr>
-                    <td>fall 2022</td>
-                    <td>applied physics (lab)</td>
-                    <td>1</td>
-                    <td></td>
-                    <td>provisional</td>
-                </tr>
-                <tr>
-                    <td>fall 2022</td>
-                    <td>workshop practice</td>
-                    <td>1</td>
-                    <td></td>
-                    <td>provisional</td>
-                </tr>
-            </table>
+            <section>
+                <table>
+                    <thead>
+                        <th>Semester name</th>
+                        <th>Subject name</th>
+                        <th>CH</th>
+                        <th>grade</th>
+                        <th>status</th>
+                    </thead>
+                    <tr>
+                        <td>fall 2022</td>
+                        <td>Programming Fundamentals</td>
+                        <td>3</td>
+                        <td id="dpf"></td>
+                        <td>provisional</td>
+                    </tr>
+                    <tr>
+                        <td>fall 2022</td>
+                        <td>Programming Fundamentals (Lab)</td>
+                        <td>1</td>
+                        <td id="dpfl"></td>
+                        <td>provisional</td>
+                    </tr>
+                    <tr>
+                        <td>fall 2022</td>
+                        <td>Introduction to computing</td>
+                        <td>3</td>
+                        <td id="ditc"></td>
+                        <td>provisional</td>
+                    </tr>
+                    <tr>
+                        <td>fall 2022</td>
+                        <td>Introduction to computing (Lab)</td>
+                        <td>1</td>
+                        <td id="ditcl"></td>
+                        <td>provisional</td>
+                    </tr>
+                    <tr>
+                        <td>fall 2022</td>
+                        <td>Functional english</td>
+                        <td>3</td>
+                        <td id="dfe"></td>
+                        <td>provisional</td>
+                    </tr>
+                    <tr>
+                        <td>fall 2022</td>
+                        <td>calculus</td>
+                        <td>3</td>
+                        <td id="dcal"></td>
+                        <td>provisional</td>
+                    </tr>
+                    <tr>
+                        <td>fall 2022</td>
+                        <td>applied physics</td>
+                        <td>2</td>
+                        <td id="daphy"></td>
+                        <td>provisional</td>
+                    </tr>
+                    <tr>
+                        <td>fall 2022</td>
+                        <td>applied physics (lab)</td>
+                        <td>1</td>
+                        <td id="daphyl"></td>
+                        <td>provisional</td>
+                    </tr>
+                    <tr>
+                        <td>fall 2022</td>
+                        <td>workshop practice</td>
+                        <td>1</td>
+                        <td id="dws"></td>
+                        <td>provisional</td>
+                    </tr>
+                </table>
+            </section>
         </section>
     </main>
 </body>
+
 </html>

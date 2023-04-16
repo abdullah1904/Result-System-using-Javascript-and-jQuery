@@ -118,7 +118,6 @@ main .data .box span{
 }
 main .result{
     width: 100%;
-    border: 1px solid black;
     margin: 8vh 0vh;
     display: none;
 }
@@ -129,19 +128,23 @@ main .result h2{
     font-family: var(--font1);
     margin: 2vh auto;
 }
-main .result table{
+main .result section table{
     width: 100%;
     text-transform: capitalize;
 }
-main .result table thead,main .result table tr{
+main .result section table thead,main .result section table tr{
     width: 100%;
     font-family: var(--font2);
-    border: 1px solid black;
 }
-main .result table thead th,main .result table tr td{
+main .result section table thead{
+    background-color: var(--color1);
+    color: white;
+}
+main .result section table thead th,main .result section table tr td{
     width: 20%;
     border: 1px solid black;
     font-family: var(--font1);
+    padding: 2px;
 }
 /* CSS For Responsiveness */
 @media only screen and (max-width:768px) {
@@ -185,5 +188,11 @@ main .result table thead th,main .result table tr td{
     }
     main .data .box p{
         font-size: 0.8em;
+    }
+    main .result section{
+        overflow-x: scroll;
+    }
+    main .result section table{
+        width: 200%;
     }
 }
