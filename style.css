@@ -146,6 +146,23 @@ main .result section table thead th,main .result section table tr td{
     font-family: var(--font1);
     padding: 2px;
 }
+/* Main CSS Ends Here */
+/* Footer CSS Starts Here */
+footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font1);
+    background-color: var(--color1);
+    text-transform: capitalize;
+    color: white;
+    padding: 5px;
+    display: none;
+    position: relative;
+    bottom: 0;
+}
+/* Footer CSS Ends Here */
 /* CSS For Responsiveness */
 @media only screen and (max-width:768px) {
     header{
@@ -193,7 +210,7 @@ main .result section table thead th,main .result section table tr td{
         margin: 3vh 0vh; 
     }
     main .result h2{
-        font-size: 0.8em;
+        font-size: 0.9em;
         margin: 1vh auto;
     }
     main .result section{
@@ -201,6 +218,11 @@ main .result section table thead th,main .result section table tr td{
     }
     main .result section table{
         width: 200%;
-        font-size: 0.6em;
+        font-size: 0.7em;
+    }
+    footer{
+        font-size: 0.8em;
     }
 }
+/* -- THE END -- */
+/* Created By M.Abdullah Zahid */

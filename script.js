@@ -8,6 +8,7 @@ var drollno = document.getElementById("rollno");
 var dredgno = document.getElementById("redgno");
 var databox = document.querySelector('.data');
 var resultbox = document.querySelector('.result');
+var footer = document.getElementsByTagName("footer");
 var DPF = document.getElementById("dpf");
 var DPFL = document.getElementById("dpfl");
 var DITC = document.getElementById("ditc");
@@ -48,11 +49,14 @@ $(document).ready(function(){
         $(databox).fadeOut("fast");
         $(error).fadeOut("fast");
         $(resultbox).fadeOut("fast");
+        $(footer).fadeOut("fast");
         for(let i = 0; i<students.length;i++){
             if(students[i].rollno == input.value){
                 $(databox).fadeIn("slow");
-                databox.style.display = "flex";
+                $(databox).css("display", "flex");
                 $(resultbox).fadeIn("slow");
+                $(footer).fadeIn("slow");
+                $(footer).css("display","flex");
                 display(i);
                 checkflag = true;
                 break;
@@ -79,3 +83,5 @@ var display = (x)=>{
     DAPHYL.innerHTML = students[x].aphyl;
     DWS.innerHTML = students[x].workshop;
 }
+// -- THE END --
+// Created By M.Abdullah Zahid
