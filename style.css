@@ -189,8 +189,12 @@ main .result section table thead th,main .result section table tr td{
     main .data .box p{
         font-size: 0.8em;
     }
+    main .result{
+        margin: 3vh 0vh; 
+    }
     main .result h2{
         font-size: 0.8em;
+        margin: 1vh auto;
     }
     main .result section{
         overflow-x: scroll;
