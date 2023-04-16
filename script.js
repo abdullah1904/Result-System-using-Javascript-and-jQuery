@@ -2,7 +2,12 @@
 var input = document.getElementById("entry");
 var button = document.getElementById("btn");
 var error = document.getElementById("error");
-var checkflag = false;
+var dname = document.getElementById("name");
+var dfname = document.getElementById("fname");
+var drollno = document.getElementById("rollno");
+var dredgno = document.getElementById("redgno");
+var databox = document.querySelector('.data');
+var resultbox = document.querySelector('.result')
 // Class for students data entry
 class student{
     constructor(Name="Not Enter",rollnumber="Not Enter",fathername="Not Enter",regdnumber="Not Enter"){
@@ -32,16 +37,27 @@ students[1].entry("A","A-","A","A","C-","A-","B-","B+","B-");
 // Main Function
 $(document).ready(function(){
     $(button).click(function(){
-        checkflag = false;
+        var checkflag = false;
         for(let i = 0; i<students.length;i++){
             if(students[i].rollno == input.value){
+                $(databox).fadeIn("slow");
+                databox.style.display = "flex";
+                $(error).fadeOut("slow");
+                display(i);
                 checkflag = true;
-                error.style.display = "none";
                 break;
             }
         }
         if(checkflag == false){
-            error.style.display="block";
+            $(databox).fadeOut();
+            $(error).fadeIn();
         }
     });
 }); 
+// Functions
+var display = (x)=>{
+    dname.innerHTML = students[x].name;
+    dfname.innerHTML = students[x].fname;
+    drollno.innerHTML = students[x].rollno;
+    dredgno.innerHTML = students[x].redgno;
+}
